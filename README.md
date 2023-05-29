@@ -16,4 +16,7 @@
 
 [оптимизировать картинки](https://tinypng.com/), чтобы ваш сайт загружался быстрее.
 
+**GitHub Pages**
+https://veronikamelniks.github.io/mesto/
+
 
