@@ -12,7 +12,7 @@
     align-self: center;
 }
 
-.element__group:hove{
+.element__group:hover{
     opacity: 0.7;
 }
 
