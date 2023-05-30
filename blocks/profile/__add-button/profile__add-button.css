@@ -10,8 +10,8 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 2px;
-    text-overflow: ellipsis; 
-    white-space: nowrap; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
     overflow: hidden;
 }
 
