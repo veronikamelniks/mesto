@@ -4,7 +4,8 @@
     margin: 51px auto 0;
     grid-auto-flow: row;
     grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
-    gap: 17px;
+    row-gap: 20px;
+    column-gap: 17px;
     
 }
 

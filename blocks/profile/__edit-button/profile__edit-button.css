@@ -8,10 +8,8 @@
         background-color: transparent;
         background-repeat: no-repeat;
         background-position: center;
-        object-fit: cover;
         padding-left: 11px;
         padding-right: 11px;
-    
 }
     
 .profile__edit-button:hover {
@@ -25,8 +23,5 @@
         margin-top: 8px;
         padding: 0;
         background-size: 7px 7px;
-        background-color: transparent;
-        background-repeat: no-repeat;
-        background-position: center;
         }
     }

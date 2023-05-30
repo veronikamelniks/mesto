@@ -5,7 +5,8 @@
     max-width: 400px;
 }
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 425px) {
     .profile__block {
         max-width: 300px;
         margin-left: auto;
