@@ -1,0 +1,11 @@
+.header__lang-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 18px;
+}
