@@ -1,13 +1,13 @@
 .profile__name{
     max-width: 294px;
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-size: 42px;
-    line-height: 48px;
-    font-weight: 500;
     margin: 0;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    line-height: normal;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 700px) {
@@ -15,6 +15,5 @@
         align-items: center;
         text-align: center;
         font-size: 27px;
-        line-height: 33px;
     }
 }
