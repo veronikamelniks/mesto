@@ -1,0 +1,17 @@
+.element__group{
+    width: 22px;
+    height: 19px;
+    cursor: pointer;
+    background-image: url("../../../images/like.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    padding: 0;
+    display: flex;
+    align-self: center;
+}
+
+.element__group:hover{
+    opacity: 0.5;
+}
