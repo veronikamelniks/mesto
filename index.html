@@ -27,7 +27,7 @@
                 <button type="button" class="profile__add-button"></button>
             </section>
 
-            <section class="elements" aria-label="Карточки Кавказа">
+            <section class="elements" aria-label="Карточки мест">
                 <div class="element">
                     <img src="./images/karachaevsk.jpg" class="element__mask" alt="Карачаевск" data-type="auto">
                     <div class="element__description">
@@ -39,35 +39,35 @@
                     <img src="./images/elbrus.jpg" class="element__mask" alt="Эльбрус" data-type="auto">
                     <div class="element__description">
                         <h2 class="element__name">Гора Эльбрус</h2>
-                        <button type="button" class="element__group"></button>
+                        <button type="button" class="element__group element__like_active"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img src="./images/dombai.jpg" class="element__mask" alt="Домбай" data-type="auto">
                     <div class="element__description">
                         <h2 class="element__name">Домбай</h2>
-                        <button type="button" class="element__group"></button>
+                        <button type="button" class="element__group element__like_active"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img src="./images/elbrus.jpg" class="element__mask" alt="Эльбрус" data-type="auto">
                     <div class="element__description">
                         <h2 class="element__name">Гора Эльбрус</h2>
-                        <button type="button" class="element__group"></button>
+                        <button type="button" class="element__group element__like_active"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img src="./images/dombai.jpg"  class="element__mask" alt="Домбай" data-type="auto">
                     <div class="element__description">
                         <h2 class="element__name">Домбай</h2>
-                        <button type="button" class="element__group"></button>
+                        <button type="button" class="element__group element__like_active"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img src="./images/karachaevsk.jpg" class="element__mask" alt="Карачаевск" data-type="auto">
                     <div class="element__description">
                         <h2 class="element__name">Карачаевск</h2>
-                        <button type="button" class="element__group"></button>
+                        <button type="button" class="element__group element__like_active"></button>
                     </div>
                 </div>
             </section>
@@ -76,9 +76,9 @@
         <footer class="footer">
             <p class="footer__copyright">© 2020 Mesto Russia</p>
         </footer>
-        <div class="popup" id="popup" >
+        <div class="popup" id="popup">
             <div class="popup__container">
-                <button type="button" class="popup__close"></button>
+                <button type="button" class="popup__close" id="popup-close"></button>
                     <h2 class="popup__name">Редактировать профиль</h2>
                     <form class="popup__form" name="profile-form">
                         <fieldset class="popup__text">
@@ -89,12 +89,12 @@
                     </form>          
             </div>
         </div>
-        <div class="popup" id="new-place">
+        <div class="popup" id="add-popup">
             <div class="popup__container">
-                <button type="button" class="popup__close"></button>
+                <button type="button" class="popup__close" id="new-popup-close"></button>
                     <h2 class="popup__name">Новое место</h2>
-                    <form class="popup__form" name="newplace-form">
-                        <fieldset class="popup__text">
+                    <form class="popup__form" name="newplace-form" id="new-popup-form">
+                        <fieldset class="popup__text" id="new-popup-text">
                             <input type="text" name="Name" class="popup__input popup__input_input_name"  placeholder="Название">
                             <input type="text" name="Link" class="popup__input popup__input_input_link"  placeholder="Ссылка на картинку">
                         </fieldset>
@@ -102,6 +102,27 @@
                     </form>   
             </div> 
         </div>
+
+        <div class="popup popup_image" id="image-popup">
+            <div class="popup__container-element-image">
+                <button type="button" class="popup__close popup__image-close"></button>
+                <div class="popup__content"> 
+                    <img class="popup__element-image" src="." alt="Изображение у карточки">
+                    <h3 class="popup__element-title"></h3>
+                </div>
+            </div>
+        </div>
+
+        <template id="element-template">
+            <div class="element">
+                <img src="." class="element__mask">
+                <button class="element__delete-button"></button>
+                <div class="element__description">
+                    <h2 class="element__name"></h2>
+                    <button type="button" class="element__group"></button>
+                </div>
+            </div>
+        </template>
     <script src="./scripts/index.js"></script>    
     </body>
 </html>
