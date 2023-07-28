@@ -87,7 +87,7 @@ buttonClosePopupImage.addEventListener("click", function() {
 
 //Создание карточки 
 
-const createCard = (item) => {
+const createElement = (item) => {
   const card = cards.querySelector('.element').cloneNode(true);
   const image = card.querySelector('.element__image');
   image.src = item.link;
@@ -116,20 +116,20 @@ const createCard = (item) => {
 
   return(card);
 }
-
+///
 function handleAddElementFormSubmit(evt) {
   evt.preventDefault();
-  const newCard = createCard({link: linkInput.value, name: titleInput.value});
-  container.prepend(newCard);
-  closePopup(popupElement);
+  const newElement = createElement({link: linkInput.value, name: titleInput.value});
+  container.prepend(newElement);
+  closePopup(popupAddPlace);
   formElement.reset();
 }
 
 formElement.addEventListener('submit', handleAddElementFormSubmit);
 
 initialCards.forEach((item) => {
-  const card = createCard(item);
-  container.append(card);
+  const element = createElement(item);
+  container.append(element);
 })
 
 
