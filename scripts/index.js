@@ -16,8 +16,8 @@ const titleInput = formElement.querySelector('.popup__input_input_name');//+ - �
 const linkInput = formElement.querySelector('.popup__input_input_link');//+ - прокинуто везде все ок 
 const popupImages = document.querySelector(".popup__type_image");//+ - прокинуто везде все ок 
 const buttonClosePopupImage = document.querySelector(".popup__image-close");//+ - прокинуто везде все ок
-const bigImage = popupImage.querySelector(".popup__image");//+ - прокинуто везде все ок 
-const titleBigImage = popupImage.querySelector(".popup__image-name");
+const bigImage = popupImages.querySelector(".popup__image");//+ - прокинуто везде все ок 
+const titleBigImage = popupImages.querySelector(".popup__image-name");
 
 
 //Функции открытия/закрытия попапов
