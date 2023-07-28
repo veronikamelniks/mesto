@@ -71,11 +71,11 @@ const createCard = (item) => {
   image.alt = item.name;
 
   card.querySelector('.element__delete-button').addEventListener('click', () => {
-    card.remove();//
+    card.remove();
   });
 
-  card.querySelector('.element__button-like').addEventListener('click', function(evt) {
-   evt.target.classList.toggle('element__like_active');//
+  card.querySelector('.element__like').addEventListener('click', function(evt) {
+   evt.target.classList.toggle('.element__like_active');
   });
 
   function openImage(item) {
