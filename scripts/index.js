@@ -18,7 +18,32 @@ const popupImages = document.querySelector(".popup__type_image");//+ - прок�
 const buttonClosePopupImage = document.querySelector(".popup__image-close");//+ - прокинуто везде все ок
 const bigImage = popupImages.querySelector(".popup__image");//+ - прокинуто везде все ок 
 const titleBigImage = popupImages.querySelector(".popup__image-name");
-
+const initialCards = [
+  {
+    name: 'Архыз',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
+  },
+  {
+    name: 'Челябинская область',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
+  },
+  {
+    name: 'Иваново',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
+  },
+  {
+    name: 'Камчатка',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
+  },
+  {
+    name: 'Холмогорский район',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
+  },
+  {
+    name: 'Байкал',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
+  }
+]; 
 
 //Функции открытия/закрытия попапов
 function openPopup(popup) {
@@ -75,7 +100,7 @@ const createCard = (item) => {
   });
 
   card.querySelector('.element__like').addEventListener('click', function(evt) {
-   evt.target.classList.toggle('.element__like_active');
+   evt.target.classList.toggle('element__like_active');
   });
 
   function openImage(item) {
@@ -92,8 +117,7 @@ const createCard = (item) => {
   return(card);
 }
 
-///
-function handleAddCardFormSubmit(evt) {
+function handleAddElementFormSubmit(evt) {
   evt.preventDefault();
   const newCard = createCard({link: linkInput.value, name: titleInput.value});
   container.prepend(newCard);
@@ -101,7 +125,7 @@ function handleAddCardFormSubmit(evt) {
   formElement.reset();
 }
 
-formElement.addEventListener('submit', handleAddCardFormSubmit);
+formElement.addEventListener('submit', handleAddElementFormSubmit);
 
 initialCards.forEach((item) => {
   const card = createCard(item);
