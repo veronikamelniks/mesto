@@ -1,4 +1,4 @@
-.element__block {
+.elements__block {
   margin: 0 auto 66px;
   padding: 0;
   list-style: none;
@@ -10,7 +10,7 @@
 }
 
 @media (max-width: 1023px) {
-  .element__block {
+  .elements__block {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 20px 25px;
@@ -18,7 +18,7 @@
 }
 
 @media (max-width: 767px) {
-  .elements__cards {
+  .elements__block {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
     gap: 20px;
