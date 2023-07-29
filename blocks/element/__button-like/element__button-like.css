@@ -1,22 +1,18 @@
-.element__delete-button {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 18px;
+.element__button-like {
+  width: 22px;
   height: 19px;
   background-color: transparent;
-  background-image: url(../../../images/Trash.svg);
+  background-image: url(../../../images/like.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   border: 0;
-  margin: 0;
+  margin: 5px 0 0;
   padding: 0;
   cursor: pointer;
   opacity: 1;
   transition: opacity .3s ease .1s;
 }
 
-.element__delete-button:hover {
-  opacity: .6;
+.element__button-like:hover {
+  opacity: .5;
 }
-

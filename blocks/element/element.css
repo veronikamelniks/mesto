@@ -1,9 +1,23 @@
-.element{
-    max-width: 282px;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    margin: 0;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
+.element {
+  width: 282px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (max-width: 1023px) {
+  .element {
+    width: 350px;
+  }
+}
+
+@media (max-width: 767px) {
+  .element {
+    width: 282px;
+  }
 }

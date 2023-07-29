@@ -1,16 +1,16 @@
-.popup__name{
-    margin: 0 0 52px 0;
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 100%;
-    color: #000000;
+.popup__name {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+  color: #0000;
+  max-width: 330px;
+  margin: 0 0 50px;
 }
 
-@media screen and (max-width: 600px) {
-    .popup__name {
-        font-size: 18px;
-        margin-bottom: 75px;
-    }
+@media (max-width: 767px) {
+  .popup__name {
+    max-width: 238px;
+    font-size: 18px;
+    margin: 0 0 75px;
+  }
 }
