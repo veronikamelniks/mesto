@@ -13,12 +13,12 @@
     </header>
     <main class="content">
       <section class="profile">
-        <img src="./images/kusto.jpg" alt="Жак-Ив Кусто" class="profile__avatar">
+        <img src="./images/Kusto.jpg" alt="Жак-Ив Кусто." class="profile__avatar">
         <div class="profile__info">
           <h1 class="profile__name">Жак-Ив Кусто</h1>
-          <p class="profile__description">Исследователь океана</p>
           <button type="button" class="profile__edit-button"></button>
           <button type="button" class="profile__add-button"></button>
+          <p class="profile__job">Исследователь океана</p>
         </div>
       </section>
       <section class="elements" aria-label="Карточки мест">
@@ -32,10 +32,10 @@
   <div class="popup popup_profile">
     <div class="popup__container">
       <button type="reset" class="popup__button-close"></button>
-      <h2 class="popup__name">Редактировать профиль</h2>
+      <h2 class="popup__title">Редактировать профиль</h2>
       <form class="popup__form" name="profile-form">
-        <input type="text" name="Name" value="" class="popup__input popup__input_input_title" placeholder="Имя">
-        <input type="text" name="Description" value="" class="popup__input popup__input_type_description" placeholder="О себе">
+        <input type="text" name="Name" src="#" class="popup__input popup__input_input_title" placeholder="Имя">
+        <input type="text" name="Description" src="#" class="popup__input popup__input_type_description" placeholder="О себе">
         <button type="submit" class="popup__save-button">Сохранить</button>
       </form>
     </div>
@@ -45,8 +45,8 @@
       <button type="reset" class="popup__button-close popup__button-close_element" aria-label="Close"></button>
       <h2 class="popup__title">Новое место</h2>
       <form name="formElement" class="popup__form popup__form_element">
-        <input type="text" name="Name" value="" class="popup__input popup__input_type_name" placeholder="Название">
-        <input type="url" name="Link" value="" class="popup__input popup__input_type_link" placeholder="Ссылка на картинку">
+        <input type="text" name="Name" src="#" class="popup__input popup__input_type_name" placeholder="Название" required>
+        <input type="url" name="Link" src="#" class="popup__input popup__input_type_link" placeholder="Ссылка на картинку" required>
         <button type="submit" class="popup__save-button">Сохранить</button>
       </form>
     </div>
@@ -62,15 +62,14 @@
   <template id="element-template">
     <li class="element">
       <img class="element__image">
-      <button type="button" class="element__delete-button" aria-label="Delete"></button>
+      <button type="button" class="element__delete-button" aria-label="Удалить"></button>
       <div class="element__place">
         <h2 class="element__title"></h2>
-        <button type="button" class="element__button-like" aria-label="Like"></button>
+        <button type="button" class="element__button-like" aria-label="Поставить лайк"></button>
       </div>
     </li>
   </template>
-
-  <script src="scripts/initialcards.js"></script>
+  <script src="scripts/initialCards.js"></script> 
   <script src="scripts/index.js"></script>
 </body>
 </html>

@@ -1,11 +1,11 @@
 const profileAditButton = document.querySelector('.profile__edit-button');
 const popupProfile = document.querySelector('.popup_profile')
 const buttonClosePopupProfile = popupProfile.querySelector(".popup__button-close");
-const formProfile = document.querySelector('.popup__form');
+const formProfile = popupProfile.querySelector('.popup__form');
 const nameInput = formProfile.querySelector('.popup__input_input_title');
-const jobInput = formProfile.querySelector('.popup__input_input_description');
+const jobInput = formProfile.querySelector('.popup__input_type_description');
 const profileName = document.querySelector('.profile__name');
-const profileJob = document.querySelector('.profile__description');
+const profileJob = document.querySelector('.profile__job');
 const profileAddButton = document.querySelector('.profile__add-button');
 const popupElement = document.querySelector('.popup_element');
 const buttonClosePopupElement = popupElement.querySelector(".popup__button-close_element");
@@ -18,33 +18,6 @@ const popupImage = document.querySelector('.popup_type_image');
 const buttonClosePopupImage = popupImage.querySelector(".popup__button-close_image");
 const bigImage = popupImage.querySelector(".popup__image");
 const titleBigImage = popupImage.querySelector(".popup__image-name");
-
-const initialCards = [
-  {
-    name: 'Архыз',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
-  },
-  {
-    name: 'Челябинская область',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
-  },
-  {
-    name: 'Иваново',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
-  },
-  {
-    name: 'Камчатка',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
-  },
-  {
-    name: 'Холмогорский район',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
-  },
-  {
-    name: 'Байкал',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
-  }
-]; 
 
 function openPopup(popup) {
   popup.classList.add('popup_opened');
