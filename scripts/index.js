@@ -33,7 +33,7 @@ profileAditButton.addEventListener("click", function() {
   jobInput.value = profileJob.textContent;
 })
 
-function handleFormSubmit(evt) {
+function handleProfileFormSubmit(evt) {
     evt.preventDefault();
     profileName.textContent = nameInput.value;
     profileJob.textContent = jobInput.value;
@@ -44,7 +44,7 @@ buttonClosePopupProfile.addEventListener("click", function() {
   closePopup(popupProfile);
 })
 
-formProfile.addEventListener('submit', handleFormSubmit);
+formProfile.addEventListener('submit', handleProfileFormSubmit);
 
 profileAddButton.addEventListener("click", function() {
   openPopup(popupElement);
@@ -85,7 +85,7 @@ const createCard = (item) => {
     openPopup(popupImage);
   })
 
-  return(card);
+  return card;
 }
 
 function handleAddCardFormSubmit(evt) {
