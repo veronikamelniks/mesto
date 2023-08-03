@@ -19,10 +19,6 @@ const hideEInputError = (inputElement, errorElement, config) => {
     errorElement.textContent = inputElement.validationMessage; 
 }
 
-function disableButton(buttonElement, config) {
-    buttonElement.disabled = true;
-    buttonElement.classList.add(config.inactiveButtonClass);   
-};
 
 const disableButton = (buttonElement, config) => {
     buttonElement.disabled = true;
