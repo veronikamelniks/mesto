@@ -47,7 +47,7 @@ const toggleButton = (buttonElement, isActive, config) => {
 
 const isValidity = (inputElement, formElement, config) => {
     const isInputValid = inputElement.validity.valid;
-    const errorElement = formElement.querySelector(`#${inputElement.name}-error`);
+    const errorElement = formElement.querySelector(`#${inputElement.name}-popup__error`);
     if(!isInputValid) {
         showInputError(inputElement, errorElement, config);
     }   else {
@@ -80,6 +80,7 @@ const enableValidation = (config) => {
         setEventListener(formElement, config);
     });
 };
+
 
 enableValidation(config);
 
