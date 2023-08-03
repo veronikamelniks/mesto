@@ -18,14 +18,39 @@ const popupImage = document.querySelector('.popup_type_image');
 const buttonClosePopupImage = popupImage.querySelector(".popup__button-close_image");
 const bigImage = popupImage.querySelector(".popup__image");
 const titleBigImage = popupImage.querySelector(".popup__image-name");
+const popups = document.querySelectorAll(".popup");
+
 
 function openPopup(popup) {
   popup.classList.add('popup_opened');
+  document.addEventListener('keydown', closeByEscape);
 }
 
 function closePopup(popup) {
   popup.classList.remove('popup_opened');
+  document.addEventListener('keydown', closeByEscape);
 }
+
+function closeByEscape(evt) {
+  if (evt.key === "Escape") {
+      const openedPopup = document.querySelector('.popup_opened');
+      closePopup(openedPopup);
+  }
+}
+
+function closePopupByOverlay() {
+  popups.forEach((el) => {
+      el.addEventListener("mousedown", function (evt) {
+          if (evt.target.classList.contains("popup_opened")) {
+              closePopup(evt.target);
+          }
+      });
+  });
+}
+
+closePopupByOverlay();
+
+
 
 profileAditButton.addEventListener("click", function() {
   openPopup(popupProfile);
