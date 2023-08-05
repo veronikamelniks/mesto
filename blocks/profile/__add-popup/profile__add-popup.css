@@ -1,0 +1,25 @@
+.profile__add-popup {
+    background-image: url("../../../images/add.svg");
+    width: 150px;
+    height: 50px;
+    border: solid 2px #fff;
+    cursor: pointer;
+    margin: 35px 0 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border-radius: 2px;
+}
+
+.profile__add-popup:hover {
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 700px) {
+    .profile__add-popup {
+        width: 282px;
+        margin: 34px 19px 0 19px;
+        padding: 0;
+        background-size: 16px 16px;
+    }
+}
