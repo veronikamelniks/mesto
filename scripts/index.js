@@ -124,7 +124,7 @@ function addCardFormSubmit(evt) {
         link: popupAddLink.value,
     });
     evt.target.reset();
-    evt.submitter.classList.add('form__button_invalid')
+    disbaledButton();
     evt.submitter.disabled = true;
     closePopup(addPopup);
 }
