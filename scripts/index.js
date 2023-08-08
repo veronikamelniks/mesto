@@ -124,7 +124,6 @@ function addCardFormSubmit(evt) {
         link: popupAddLink.value,
     });
     evt.target.reset();
-    disbaledButton();
     closePopup(addPopup);
 }
 
