@@ -13,3 +13,4 @@
 - JavaScript
 
 Ссылка на GITHUB
+https://veronikamelniks.github.io/mesto/
