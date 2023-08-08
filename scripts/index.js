@@ -125,7 +125,6 @@ function addCardFormSubmit(evt) {
     });
     evt.target.reset();
     disbaledButton();
-    evt.submitter.disabled = true;
     closePopup(addPopup);
 }
 
