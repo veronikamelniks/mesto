@@ -9,7 +9,7 @@ function hideError(inputElement, errorElement, config) {
 }
 
 function disbaledButton(buttonElement, config) {
-    buttonElement.disabled = "disabled";
+    buttonElement.disabled = true;
     buttonElement.classList.add(config.inactiveButtonClass);
 }
 

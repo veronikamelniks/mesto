@@ -21,7 +21,7 @@ const popupAddTitle = document.querySelector(".form__input_input_title");
 const popupAddLink = document.querySelector(".form__input_input_link");
 const popupImage = document.querySelector(".popup__card-image");
 const popupCardTitle = document.querySelector(".popup__card-title");
-
+const addPopupSubmitButton =  addPopup.querySelector('.form__button');
 
 
 function openPopup(popup) {
@@ -124,7 +124,9 @@ function addCardFormSubmit(evt) {
         link: popupAddLink.value,
     });
     evt.target.reset();
+    disbaledButton(addPopupSubmitButton,configFormSelector);
     closePopup(addPopup);
+
 }
 
 popupAddForm.addEventListener("submit", addCardFormSubmit);
